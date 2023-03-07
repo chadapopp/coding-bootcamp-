@@ -1,0 +1,45 @@
+*{
+    font-family: sans-serif;
+}
+
+.user   {
+    border: 5px solid black;
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px;
+    
+}
+
+.top-left  {
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.likes {
+    margin-top: 20px;
+}
+
+button{
+    margin-left: 20px;
+    padding: 5px;
+    width: 75px;
+    background-color:rgb(255,217,102) ;
+    box-shadow: 3px 3px black;
+    border: 3px solid black;
+    font-weight: bold;
+}
+
+.lower {
+    align-self: flex-end;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+

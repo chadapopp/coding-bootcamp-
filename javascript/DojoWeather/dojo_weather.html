@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dodjo_weather.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <!--Nav Bar-->
+    <div class="nav">
+        <div class="left_nav"><h1>DojoWeather</h1></div>
+        <div class="right_nav">
+            <ul onclick="message()">
+                <li><a href="#">Burbank</a></li>
+                <li><a href="#">Chicago</a></li>
+                <li><a href="#">Dallas</a></li>
+            </ul>
+        </div>
+    </div>
+
+     
+    <!--Chosen City-->
+    <div class="header">
+        <div class="left_header"><h2>San Jose</h2></div>
+        <div class="right_header">
+            <p>show temperature in
+            <select onchange="convert(this)">
+                <option> &#xb0; C</option>
+                <option> &#xb0; F</option>
+            </select>
+            </p>
+        </div>
+    </div>
+
+    <!--Main Content-->
+    <div class="main">
+        <div class="day">
+            <h2>Today</h2>
+            <img src="./imgs/some_rain.png" alt="rain">
+            <p>some rain</p>
+                <div class="current_temp">
+                    <p class="left_temp" id="temp1">24</p> <p class="right_temp" id="temp2">18</p>
+                </div>
+        </div>
+
+        <div class="day">
+            <h2>Tomorrow</h2>
+            <img src="./imgs/some_sun.png" alt="sun">
+            <p>some sun</p>
+            <div class="current_temp">
+                <p class="left_temp" id="temp3">27</p> <p class="right_temp" id="temp4">19</p>
+            </div>
+        </div>
+
+        <div class="day">
+            <h2>Friday</h2>
+            <img src="./imgs/some_clouds.png" alt="clouds">
+            <p>some clouds</p>
+            <div class="current_temp">
+                <p class="left_temp" id="temp5">21</p> <p class="right_temp" id="temp6">16</p>
+            </div>
+        </div>
+
+        <div class="day">
+            <h2>Saturday</h2>
+            <img src="./imgs/some_sun.png" alt="sun">
+            <p>some sun</p>
+            <div class="current_temp">
+                <p class="left_temp" id="temp7">26</p> <p class="right_temp" id="temp8">21</p>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="footer">
+            <div>
+                <img src="./imgs/cookie.png" alt="cookie" id="cookie">
+            </div>
+            <div>
+                <p> <strong>Stop! Cookie time</strong> <br> We use cookies (sadly not the edible ones) to personalize <br> content and ads, to provide social media features and to <br> analyze out traffic. <a href="#">Read More...</a></p>
+            </div>
+            <button onclick="ignore(this)">I Accept</button>
+        </div>
+
+    </div>
+
+
+
+    <script src="dojo_weather.js"></script>
+</body>
+</html>
