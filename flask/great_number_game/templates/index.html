@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        .low, .high{
+            width: 200px;
+            padding: 25px;
+            color: white;
+            border: 2px solid black;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+    </style>
+
+    <title>Guess The Number</title>
+</head>
+<body class="bg-info">
+    <div class="flex justify-center col-6 mx-auto text-center">
+
+        <h1>Welcome to the Great Number Game!</h1>
+        <h2>Im thinkning of a number between 1 and 100</h2>
+        {% if 'guess' in session %} 
+        {% if session['guess'] == session['num'] %} 
+        <div class="high bg-success p-4">
+            <h2>{{session['num']}} Was the number!</h2>
+            <a href="/reset" class="btn btn-light">Play Again</a>
+        </div>
+        {% elif session['guess'] < session['num'] %}
+        <div class="low bg-warning">
+            <h2>The number is too low!</h2>
+        </div>
+        {%elif session['guess'] > session['num']%}
+    <div class="high card bg-danger">
+        <h2>The number is too high!</h2>
+    </div>
+        {%endif%}
+    {% endif %}
+
+        <form action="/guess" class="bg-dark text-warning text center p-5 rounded"method="post">
+            <div class="form-group">
+                <label for="guess">Take a Guess!!</label>
+                <input type="text" name="guess" id="guess" class="form-control">
+            </div>
+            <input type="submit" value="guess" class="btn btn-warning">
+        </form>
+
+
+    </div>
+
+    
+</body>
+</html>
