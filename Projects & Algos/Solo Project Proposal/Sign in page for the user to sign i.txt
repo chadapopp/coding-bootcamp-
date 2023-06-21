@@ -1,0 +1,9 @@
+Sign in page for the user to sign in and change / update turnaround equipment information and also track who changed the information.
+
+Figure out a way to dump multiple pieces of equipment into a database at one time using excel or equivilent.
+Ablilty to see all equipment associated with the certain job.
+Ability to set certain tasks to each job.
+Ability to track progress of task completion.
+Ability to update / change information about certain tasks as needed.
+
+https://github.com/chadapopp/WallChart
