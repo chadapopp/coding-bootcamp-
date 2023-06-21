@@ -1,0 +1,106 @@
+/* buttons */
+.btn{
+        border: solid;
+        border-radius: 20px;
+        border-color: rgb(21, 181, 192);
+        margin: 40px 0px 0px 40px;
+        padding: 5px 50px ;
+        background-color: rgb(236, 236, 236);
+        color: rgb(21, 181, 192);
+        font-weight: bold;
+}
+
+/* Columns */
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 50px;
+}
+
+.col, .col-2,{
+    background-color: teal;
+    height: 50px;
+    flex: 1;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.col-2{
+    flex:2;
+}
+
+.col-3{
+    flex:3
+}
+
+/* Nav Bars */
+.nav {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.726);
+    height: 70px;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;;
+    color: white;
+    margin-left: 15px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    width: 50%;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;;
+}
+
+button {
+    background-color: rgba(0, 255, 255, 0.753);
+    color: white;
+    width: 90px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 20px;
+
+}
+a {
+    color: white;
+    justify-content: space-around;
+    text-decoration: none;
+
+}
+
+/* message */
+#message {
+    width: inherit;
+    min-height: 100px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 4px 4px 4px grey;
+    /* change the position properties here */
+    position: fixed; 
+    top: 100px;
+    left: 100px;
+    
+  }
+  #message * {
+    margin: 10px;
+  }
+  #message .header {
+    margin: 0px;
+    background-color: #ddd;
+    padding: 10px;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+  }
+  #message button {
+    height: 30px;
+    width: 80px;
+  }
